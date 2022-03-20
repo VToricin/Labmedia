@@ -1,0 +1,92 @@
+.table {
+  width: $usfullFieldWidth;
+  margin-top: 70px;
+  &__row{
+    height: 50px;
+    border-top: 1px solid #616161;
+
+    .userName {
+      font-weight: 700;
+      color: #0CB4F1;
+      width: 245px;
+    }
+
+    .email {
+      width: 250px;
+    }
+
+
+    .rate {
+      width: 140px;
+    }
+
+    .deleteUser{
+      width: 50px;
+      position: relative;
+      .xpic{
+        position: absolute;
+        top: 35%;
+        left: 35%;
+      }
+    }
+  }
+  
+  table{
+    width: $usfullFieldWidth;
+    border-radius: 7px;
+    background: #FFFFFF;
+    border: 1px white solid;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: $fntFamily;
+    border-left: 17px white solid;
+    border-right: 17px white solid;
+
+    
+    td{
+      text-align: left;
+      color:#ACACAC;
+    }
+  }
+
+
+
+  &__control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+
+    p{
+      font-size: 10px;
+      font-family: $fntFamily;
+      font-weight: 500;
+      margin-right: 8px;
+      color: #9EAAB4;
+      
+      &.activated2 {
+        color: black;
+        border-bottom: 1px dashed black;
+        
+      }
+    }
+
+
+  }
+  .dateSortButton  {
+    cursor: pointer;
+    border-bottom: 1px dashed #9EAAB4;
+    
+  }
+  .rateSortButton  {
+    cursor: pointer;
+    border-bottom: 1px dashed #9EAAB4;
+  }
+
+  td.table__header {
+    color: #9EAAB4;
+    font-family: $fntFamily;
+    font-size: 10px;
+    height: 50px;
+  }
+}

@@ -1,13 +1,155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.Search {
+  width: 961px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.Search__header p {
+  margin: 12px 0px 20px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+}
+.Search__mainField {
+  width: 100%;
+  height: 102px;
+  background: #FFFFFF;
+  box-shadow: 0px 18px 15px rgba(148, 148, 148, 0.15);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.Search__field {
+  width: 901px;
+  height: 34px;
+  margin: 12px 0px 0px 16px;
+  background: #ECEFF0;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+}
+.Search__field input {
+  width: 100%;
+  height: 32px;
+  border: 0px;
+  background: #ECEFF0;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #9EAAB4;
+}
+.Search__field .Search__icon {
+  width: 34px;
+  height: 28px;
+  position: relative;
+}
+.Search__field .Search__icon #img1 {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+.Search__field .Search__icon #img2 {
+  position: absolute;
+  left: 58%;
+  top: 64%;
+}
+.Search__clean {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 12px 0px 0px 16px;
+}
+.Search__clean p {
+  margin-left: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #4F4F4F;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.table {
+  width: 961px;
+  margin-top: 70px;
 }
+.table__row {
+  height: 50px;
+  border-top: 1px solid #616161;
+}
+.table__row .userName {
+  font-weight: 700;
+  color: #0CB4F1;
+  width: 245px;
+}
+.table__row .email {
+  width: 250px;
+}
+.table__row .deleteUser {
+  width: 50px;
+  position: relative;
+}
+.table__row .deleteUser .xpic {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+.table table {
+  width: 961px;
+  border-radius: 7px;
+  background: #FFFFFF;
+  border: 1px white solid;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  border-left: 17px white solid;
+  border-right: 17px white solid;
+}
+.table table td {
+  text-align: left;
+  color: #ACACAC;
+}
+.table__control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.table__control p {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-right: 8px;
+  color: #9EAAB4;
+}
+.table__control p.activated2 {
+  color: black;
+  border-bottom: 1px dashed black;
+}
+.table .dateSortButton {
+  cursor: pointer;
+  border-bottom: 1px dashed #9EAAB4;
+}
+.table .rateSortButton {
+  cursor: pointer;
+  border-bottom: 1px dashed #9EAAB4;
+}
+.table td.table__header {
+  color: #9EAAB4;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  height: 50px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F7F7F7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=index.css.map */

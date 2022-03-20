@@ -1,0 +1,89 @@
+.Search {
+    width: $usfullFieldWidth;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    &__header {
+        
+        p{
+          margin: 12px 0px 20px 0px;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          color: #333333;
+        }
+    }
+
+    &__mainField {  
+        width: 100%;
+        height: 102px;
+          
+        background: #FFFFFF;
+        box-shadow: 0px 18px 15px rgba(148, 148, 148, 0.15);
+        border-radius: 7px;  
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    &__field {
+        width: 901px;
+        height: 34px;
+        margin: 12px 0px 0px 16px;
+        
+        background: #ECEFF0;
+        border-radius: 4px;
+        display: flex;
+        align-items: flex-start;
+        input {
+          width: 100%;
+          height: 32px;
+          border: 0px;
+          background: #ECEFF0;
+          border-radius: 4px;
+          font-family: $fntFamily;
+          font-weight: 500;
+          color: #9EAAB4;
+        }
+        .Search__icon {
+            width: 34px;
+            height: 28px;
+            position: relative;
+            #img1{
+              position: absolute;
+              left: 25%;
+              
+              top: 25%;
+             
+              
+
+
+            }
+            #img2{
+              position: absolute;
+              left: 58%;
+              
+              top: 64%;
+              
+            }
+              
+        }
+
+    }
+    &__clean{
+        display: flex; 
+        align-items: center;
+        justify-content: flex-start;
+        margin: 12px 0px 0px 16px;
+        p{
+            margin-left: 5px;
+            font-family: $fntFamily;
+            font-size: 12px;
+            font-weight: 500;
+            color: #4F4F4F;
+            
+        }
+
+    }
+
+}
