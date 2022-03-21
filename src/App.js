@@ -9,6 +9,8 @@ const sortOrder = {
   date: null,
   rate: null
 }
+let beforeSearchItems;
+let isSearching = false;
 
 function App() {
   const [items, setItems] = useState([]);  
@@ -25,17 +27,47 @@ function App() {
      }  
   })
 
-/*   function search(searchString) {
+  function search(searchString) {
     let userName;
     let email;
-     const serachedItems = items.filter((item) => {
-        email = item.email.toLowCase()
-        username = item.username.toLowCase()
-        return username.indexOf(searchString) !== -1 || email.indexOf(searchString) !== -1
-     }) 
+    if (!isSearching) {
+      isSearching = true;
+      beforeSearchItems = items;
+    }
+
+     const searchedItems = items.filter((item) => {
+        email = item.email.toLowerCase()
+        userName = item.username.toLowerCase()
+        return userName.indexOf(searchString) !== -1 || email.indexOf(searchString) !== -1
+     })
+     setItems(searchedItems);
   }
-   */
-  
+
+  function clearSort(items) {
+    sortOrder.date = null;
+    sortOrder.rate = null;
+    items.sort((a, b) => a.id - b.id);
+  }
+
+  function resetSearch(needClearSort) {
+    let newItems;
+    if (isSearching) {
+      newItems = beforeSearchItems;
+    } else {
+      newItems = items;
+    }
+     if (needClearSort) {
+      clearSort(newItems);
+    } 
+    setItems(newItems.slice());
+  }
+  function deleteRow (elid) { 
+      items.splice(elid,1);
+      let newItems = items.slice(0,items.length);
+      setItems(newItems);
+
+  }
+
   function sort (type) {
     let field = null;
     if (type === 'date') {
@@ -73,8 +105,9 @@ function App() {
 
   return (
     <div className="App">
-      <Search/>
-      <TableBuild props = {{itemList: items, sortByDate: sort.bind(null, 'date'), sortByRate: sort.bind(null, 'rate'), sortOrder}}/>
+      <Search handler={search} resetSearch={resetSearch}/>
+      <TableBuild props = {{itemList: items, sortByDate: sort.bind(null, 'date'), 
+      sortByRate: sort.bind(null, 'rate'), sortOrder, deleteRow: deleteRow}}/>
     </div>
   );
 }

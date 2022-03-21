@@ -1,0 +1,54 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms ease;
+  
+  &__content {
+    width: 353px;
+    height: 134px;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    .buttonContain {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    p{
+      font-weight: 400;
+      font-size: 12px;
+      font-family: $fntFamily
+    }
+  }
+  &__button{
+    width: 88px;
+    height: 27px;
+    border-radius: 3px;
+    border: none;
+    margin: 0px 18px;
+  }
+  .yesButton {
+    background: #E0E0E0;
+    
+  }
+  .noButton {
+    background: #0CB4F1;
+    
+  }
+}
