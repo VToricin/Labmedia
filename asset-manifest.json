@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Labmedia/static/css/main.87857bf8.css",
+    "main.js": "/Labmedia/static/js/main.6b64e75b.js",
+    "index.html": "/Labmedia/index.html",
+    "main.87857bf8.css.map": "/Labmedia/static/css/main.87857bf8.css.map",
+    "main.6b64e75b.js.map": "/Labmedia/static/js/main.6b64e75b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87857bf8.css",
+    "static/js/main.6b64e75b.js"
+  ]
+}
